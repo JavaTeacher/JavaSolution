@@ -25,10 +25,12 @@ public class Loop {
 			
 			switch(menu) {
 			case 1:
-				System.out.println("공격력이 증가되었습니다. 현재 공격력 : " + (attackPoint + 10));
+				attackPoint += 10;
+				System.out.println("공격력이 증가되었습니다. 현재 공격력 : " + attackPoint);
 				break;
 			case 2:
-				System.out.println("공격력이 감소되었습니다. 현재 공격력 : " + (attackPoint - 10));
+				attackPoint -= 10;
+				System.out.println("공격력이 감소되었습니다. 현재 공격력 : " + attackPoint);
 				break;
 			case 3:
 				int random = new Random().nextInt(4);  // 0 ~ 3
